@@ -1,0 +1,27 @@
+<h2>List of movies</h2>
+
+<div>
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>genre</th>
+    <th>plot</th>
+    <th>cast</th>
+    <th>details</th>
+  </tr>
+        {{#each movies}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{genre}}</td>
+            <td>{{plot}}</td>
+            <td>{{cast}}</td>
+            <td><a href="/movies/{{_id}}">details</a></td>
+       </tr>
+        {{/each}}
+</table>
+
+<a href="/">Back</a>
+<a href="/movies/create">Create Movie</a>
+
+</div>
